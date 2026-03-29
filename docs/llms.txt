@@ -1,21 +1,52 @@
 # PeasySocial Embed Widget
 
-> Embeddable PeasySocial widgets for any website. Zero dependencies, Shadow DOM isolation, 4 themes (light/dark/sepia/auto).
+> File conversion tools. Embeddable widgets for any website. Zero dependencies, Shadow DOM isolation.
 
 ## Quick Start
 
-Add to any HTML page:
-- Script: <script src="https://cdn.jsdelivr.net/npm/peasy-social-embed@1/dist/embed.min.js"></script>
+```html
+<script src="https://cdn.jsdelivr.net/npm/peasy-social-embed@1/dist/embed.min.js"></script>
+<div data-peasysocial="format" data-slug="example"></div>
+```
+
+## Available Widget Types (8)
+
+- format: `data-peasysocial="format"`
+- tool: `data-peasysocial="tool"`
+- convert: `data-peasysocial="convert"`
+- compare: `data-peasysocial="compare"`
+- glossary: `data-peasysocial="glossary"`
+- gallery: `data-peasysocial="gallery"`
+- guide: `data-peasysocial="guide"`
+- search: `data-peasysocial="search"`
+
+## Customization
+
+- **Themes**: light, dark, sepia, auto (follows system preference)
+- **Sizes**: compact (280px), default (420px), large (720px)
+- **Styles**: modern, classic
+
+```html
+<div data-peasysocial="format" data-slug="example"
+     data-theme="auto" data-size="compact" data-style-variant="modern"></div>
+```
+
+## Integration Methods
+
+1. **Script tag** (recommended): `<script src="https://cdn.jsdelivr.net/npm/peasy-social-embed@1/dist/embed.min.js"></script>`
+2. **iframe**: `https://peasysocial.com/iframe/entity/{slug}/`
+3. **oEmbed**: `https://peasysocial.com/oembed?url={page_url}&format=json`
+4. **Badge**: `https://peasysocial.com/badge/site.svg`
 
 ## Links
 
 - Main site: https://peasysocial.com
 - Widget docs: https://widget.peasysocial.com
-- npm: https://www.npmjs.com/package/peasy-social-embed
-- GitHub: https://github.com/peasytools/peasy-social-embed
-- API: https://peasysocial.com/developers/
+- API documentation: https://peasysocial.com/developers/
+- npm package: https://www.npmjs.com/package/peasy-social-embed
+- GitHub: https://github.com/fyipedia/peasy-social-embed
 
-## Peasy Tools Widget Family
+## Peasy Tools Widget Network
 
 - [PeasyTools Widget](https://widget.peasytools.com)
 - [PeasyPDF Widget](https://widget.peasypdf.com)
