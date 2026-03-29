@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# PeasySocial Embed Widget
+# Main site: https://peasysocial.com
+# Widget docs: https://widget.peasysocial.com
+# npm: https://www.npmjs.com/package/peasy-social-embed
